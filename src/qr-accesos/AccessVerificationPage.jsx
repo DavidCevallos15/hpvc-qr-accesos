@@ -16,6 +16,7 @@ import logoNuevoEcuadorFooter from '../assets/logo-nuevo-ecuador.svg';
 import hospitalBackground from '../assets/background-hero-section.jpeg';
 
 const HOSPITAL_URL = 'https://hpvc.gob.ec';
+const HOSPITAL_EMAIL = 'hospital.portoviejo@mspz4.gob.ec';
 
 const accessProfiles = {
   administrativo: {
@@ -47,9 +48,9 @@ function ExternalNavbar() {
         <div className="container mx-auto flex items-center justify-end px-6">
           <a
             className="flex items-center gap-2 font-medium opacity-95 transition-colors hover:text-accent"
-            href="mailto:hospital.portoviejo@mspz4.gob.ec"
+            href={`mailto:${HOSPITAL_EMAIL}`}
           >
-            <Mail size={13} /> hospital.portoviejo@mspz4.gob.ec
+            <Mail size={13} /> {HOSPITAL_EMAIL}
           </a>
         </div>
       </div>
@@ -88,7 +89,7 @@ function ExternalFooter() {
 
         <div className="space-y-3 text-sm text-primary-pale md:justify-self-end">
           <div className="flex items-start gap-2"><MapPin size={16} className="mt-0.5 shrink-0 text-accent" /> Calle 12 de Marzo y Rocafuerte, Portoviejo, Ecuador</div>
-          <a className="flex items-center gap-2 transition-colors hover:text-white" href="mailto:hospital.portoviejo@mspz4.gob.ec"><Mail size={16} className="shrink-0 text-accent" /> hospital.portoviejo@mspz4.gob.ec</a>
+          <a className="flex items-center gap-2 transition-colors hover:text-white" href={`mailto:${HOSPITAL_EMAIL}`}><Mail size={16} className="shrink-0 text-accent" /> {HOSPITAL_EMAIL}</a>
         </div>
       </div>
       <div className="border-t border-white/10 bg-black/20">
